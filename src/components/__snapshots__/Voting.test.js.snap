@@ -2,21 +2,27 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="votes"
+  className="voting"
 >
-  <button
-    onClick={[Function]}
+  <div
+    className="vote"
   >
-    <h1>
-      ola1
-    </h1>
-  </button>
-  <button
-    onClick={[Function]}
-  >
-    <h1>
-      ola2
-    </h1>
-  </button>
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      <h1>
+        fisrt
+      </h1>
+    </button>
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      <h1>
+        second
+      </h1>
+    </button>
+  </div>
 </div>
 `;

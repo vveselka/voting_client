@@ -26,7 +26,8 @@ function resetVote(state) {
 export default function reducer(state = Map(), action) {
   switch (action.type) {
     case 'SET_STATE':
-      return resetVote(setState(state, action.state));
+      return setState(state, action.state);
+    // return resetVote(setState(state, action.state));
     case 'VOTE':
       return vote(state, action.entry);
   }

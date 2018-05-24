@@ -1,13 +1,11 @@
 export function setState(state) {
-  return { type: "SET_STATE", state };
+  return { type: 'SET_STATE', state };
 }
 
 export function vote(entry) {
-  console.log("vote!!");
-  console.log(entry);
   return {
     meta: { remote: true },
-    type: "VOTE",
+    type: 'VOTE',
     entry
   };
 }
@@ -15,6 +13,6 @@ export function vote(entry) {
 export function next() {
   return {
     meta: { remote: true },
-    type: "NEXT"
+    type: 'NEXT'
   };
 }

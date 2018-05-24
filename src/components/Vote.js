@@ -20,7 +20,9 @@ export default class Vote extends Component {
           <button
             key={entry}
             disabled={this.isDisabled()}
-            onClick={() => this.props.vote(entry)}
+            onClick={() => {
+              return this.props.vote(entry);
+            }}
           >
             <h1>{entry}</h1>
             {this.hasVotedFor(entry) ? (

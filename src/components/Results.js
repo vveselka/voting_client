@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Winner from './Winner';
 import { connect } from 'react-redux';
+import Next from './Next.js';
 import * as actionCreators from '../action_creators';
 
 class Results extends Component {
   getPair = () => {
     return this.props.pair || [];
   };
-
   getVotes = entry => {
     const { tally } = this.props;
     if (tally && tally.has(entry)) {
