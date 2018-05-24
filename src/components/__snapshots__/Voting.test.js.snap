@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="votes"
+>
+  <button
+    onClick={[Function]}
+  >
+    <h1>
+      ola1
+    </h1>
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    <h1>
+      ola2
+    </h1>
+  </button>
+</div>
+`;
